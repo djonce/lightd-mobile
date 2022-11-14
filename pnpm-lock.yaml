@@ -7,6 +7,7 @@ specifiers:
   '@umijs/fabric': ^2.8.1
   '@umijs/test': ^3.0.5
   dumi: ^1.1.0
+  dumi-theme-mobile: ^1.1.26
   father: ^4.0.0-rc.2
   gh-pages: ^3.0.0
   lint-staged: ^10.0.7
@@ -24,6 +25,7 @@ devDependencies:
   '@umijs/fabric': 2.14.0
   '@umijs/test': 3.5.35
   dumi: 1.1.49_react@18.2.0
+  dumi-theme-mobile: 1.1.26_react@18.2.0
   father: 4.1.0
   gh-pages: 3.2.3
   lint-staged: 10.5.4
@@ -5291,6 +5293,40 @@ packages:
       - react-dom
     dev: true
 
+  /dumi-theme-default/1.1.24_react@18.2.0:
+    resolution: {integrity: sha512-/fS7gBJejom1Zy1GZkrqG/dLEsCK6J/S/ctCPEawDC3KkZE0sJh+dqsMuhHt8ts7ZhaGhDpJNPXSMghfN/qrzw==}
+    peerDependencies:
+      '@umijs/preset-dumi': 1.x
+      react: ^16.13.1 || ^17.0.0
+    dependencies:
+      lodash.throttle: 4.1.1
+      prism-react-renderer: 1.3.5_react@18.2.0
+      prismjs: 1.29.0
+      rc-motion: 2.6.2_react@18.2.0
+      rc-tabs: 11.16.1_react@18.2.0
+      rc-tree: 5.7.0_react@18.2.0
+      react: 18.2.0
+      react-error-boundary: 3.1.4_react@18.2.0
+    transitivePeerDependencies:
+      - react-dom
+    dev: true
+
+  /dumi-theme-mobile/1.1.26_react@18.2.0:
+    resolution: {integrity: sha512-ORURg5IBncW/BTJZrJC5zZAvo3M+XBOrU2zCxRhljpB+6v8IuRjwoqCtb7dBm6h2m1x/cL5d7sWaAqwLOSRBQQ==}
+    peerDependencies:
+      '@umijs/preset-dumi': 1.x
+      react: ^16.13.1 || ^17.0.0
+    dependencies:
+      dumi-theme-default: 1.1.24_react@18.2.0
+      f2-touchemulator: 0.0.1
+      lodash.debounce: 4.0.8
+      qrcode.react: 1.0.1_react@18.2.0
+      react: 18.2.0
+      umi-hd: 5.0.1
+    transitivePeerDependencies:
+      - react-dom
+    dev: true
+
   /dumi/1.1.49_react@18.2.0:
     resolution: {integrity: sha512-dxC38re6FDxo9x8GLXT3Pss+uuhX9n5QYWJ05tOJpkJpNxUuJG/oAtTVhr0fq3b7AvBImdEnVK0CTOcjoqV9gA==}
     hasBin: true
@@ -6216,6 +6252,10 @@ packages:
       to-regex: 3.0.2
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /f2-touchemulator/0.0.1:
+    resolution: {integrity: sha512-dL2EqGgRFjePteQHMqvZ6UkNO357KcLbsuPqhs/Y9aCP8UBBGrHyTCrtnF38eoWY5ukfMqCNM0qpuggVybCPNQ==}
     dev: true
 
   /fast-deep-equal/3.1.3:
@@ -11218,6 +11258,21 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /qr.js/0.0.0:
+    resolution: {integrity: sha512-c4iYnWb+k2E+vYpRimHqSu575b1/wKl4XFeJGpFmrJQz5I88v9aY2czh7s0w36srfCM1sXgC/xpoJz5dJfq+OQ==}
+    dev: true
+
+  /qrcode.react/1.0.1_react@18.2.0:
+    resolution: {integrity: sha512-8d3Tackk8IRLXTo67Y+c1rpaiXjoz/Dd2HpcMdW//62/x8J1Nbho14Kh8x974t9prsLHN6XqVgcnRiBGFptQmg==}
+    peerDependencies:
+      react: ^15.5.3 || ^16.0.0 || ^17.0.0
+    dependencies:
+      loose-envify: 1.4.0
+      prop-types: 15.8.1
+      qr.js: 0.0.0
+      react: 18.2.0
+    dev: true
+
   /query-string/4.3.4:
     resolution: {integrity: sha512-O2XLNDBIg1DnTOa+2XrIwSiXEV8h2KImXUnjhhn2+UsvZ+Es2uyd5CCRTNQlDGbzUQOW3aYCBx9rVA6dzsiY7Q==}
     engines: {node: '>=0.10.0'}
@@ -13304,6 +13359,10 @@ packages:
     resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+    dev: true
+
+  /umi-hd/5.0.1:
+    resolution: {integrity: sha512-NFTTzrJArwdqtwZRNo5rF7F+NR95unQUAMkHAgcOGuuaJBnUey5w7lgpDR6K7/mV1bDwY2O3CLXSyLR1wxZyCw==}
     dev: true
 
   /umi/3.5.35:
